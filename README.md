@@ -5,6 +5,11 @@ loss function it can perform (binary) classification and regression.
 
 Some examples of loss functions can be found in `loss_functions.py`, and example of usage can be found in `test_model.py`.
 
+The implementation is based on Algorithm 10.3 described in chapter 10.10.2 of [The Elements of
+Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/), with the exception that we don't search 
+for a separate weighting constants for each decision tree region (step 2 (c)), but instead we search for a single 
+weighting constant for the whole decision tree.
+
 ## Usage
 Install requirements
 ```
